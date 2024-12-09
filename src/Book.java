@@ -5,12 +5,10 @@ public class Book {
     private String title;
     private String author;
     private Date publish;
-    private String image;
+    private byte[] image;  // Store image as binary data (BLOB)
     private String status;
     private String category;
     private int progress;
-
-
 
     // Getters and Setters
     public int getId() {
@@ -45,11 +43,11 @@ public class Book {
         this.publish = publish;
     }
 
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
