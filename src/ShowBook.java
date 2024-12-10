@@ -17,9 +17,11 @@ public class ShowBook implements BookOperationStrategy {
                 book.setId(resultSet.getInt("id"));
                 book.setTitle(resultSet.getString("title"));
                 book.setAuthor(resultSet.getString("author"));
-                book.setPublish(resultSet.getDate("publish"));
+//                book.setPublish(resultSet.getDate("publish"));
                 book.setImage(resultSet.getString("image"));
-                book.setStatus(resultSet.getString("status"));
+                book.setCategory(resultSet.getString("category"));
+                book.setProgress(resultSet.getInt("progress"));
+//                book.setStatus(resultSet.getString("status"));
                 books.add(book);  // Menambahkan book ke dalam list books
             }
         } catch (SQLException e) {

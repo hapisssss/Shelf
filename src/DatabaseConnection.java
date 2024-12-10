@@ -5,9 +5,9 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     private static DatabaseConnection instance;
     private final Connection connection;
-    private final String url = "jdbc:mysql://10.200.82.51:3307/Shelf";
+    private final String url = "jdbc:mysql://localhost:3306/Shelf";
     private final String username = "root";
-    private final String password = "password";
+    private final String password = "";
 
     private DatabaseConnection() throws SQLException {
         try {
